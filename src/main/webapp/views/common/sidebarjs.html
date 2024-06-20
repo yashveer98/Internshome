@@ -1,0 +1,54 @@
+<script >
+//Graph
+var ctx = document.getElementById("myChart");
+
+var myChart = new Chart(ctx, {
+  type: "line",
+  data: {
+    labels: [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ],
+    datasets: [
+      {
+        data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+        lineTension: 0,
+        backgroundColor: "transparent",
+        borderColor: "#007bff",
+        borderWidth: 4,
+        pointBackgroundColor: "#007bff",
+      },
+    ],
+  },
+  options: {
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: false,
+          },
+        },
+      ],
+    },
+    legend: {
+      display: false,
+    },
+  },
+});
+</script>
+<script>
+function showDiv(){
+	
+	var div=document.getElementById("showdiv");
+	if(div.style.display === "none"){
+		div.style.display = "block";
+	}
+	else{
+		div.style.display = "none";
+	}
+}</script>
